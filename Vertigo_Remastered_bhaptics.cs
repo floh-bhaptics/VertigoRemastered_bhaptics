@@ -139,35 +139,35 @@ namespace Vertigo_Remastered_bhaptics
                 if ((hit.damageType & DamageType.Bullet) == DamageType.Bullet)
                 {
                     (float hitAngle, float hitShift) = getAngleAndShift(__instance, hit);
-                    if (hitShift > 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
+                    if (hitShift >= 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
                     tactsuitVr.PlayBackHit("BulletHit", hitAngle, hitShift);
                     return;
                 }
                 if ((hit.damageType & DamageType.Laser) == DamageType.Laser)
                 {
                     (float hitAngle, float hitShift) = getAngleAndShift(__instance, hit);
-                    if (hitShift > 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
+                    if (hitShift >= 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
                     tactsuitVr.PlayBackHit("BulletHit", hitAngle, hitShift);
                     return;
                 }
                 if ((hit.damageType & DamageType.Impact) == DamageType.Impact)
                 {
                     (float hitAngle, float hitShift) = getAngleAndShift(__instance, hit);
-                    if (hitShift > 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
+                    if (hitShift >= 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
                     tactsuitVr.PlayBackHit("Impact", hitAngle, hitShift);
                     return;
                 }
                 if ((hit.damageType & DamageType.Blade) == DamageType.Blade)
                 {
                     (float hitAngle, float hitShift) = getAngleAndShift(__instance, hit);
-                    if (hitShift > 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
+                    if (hitShift >= 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
                     tactsuitVr.PlayBackHit("BladeHit", hitAngle, hitShift);
                     return;
                 }
                 if ((hit.damageType & DamageType.Bite) == DamageType.Bite)
                 {
                     (float hitAngle, float hitShift) = getAngleAndShift(__instance, hit);
-                    if (hitShift > 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
+                    if (hitShift >= 0.5f) { tactsuitVr.HeadShot(hitAngle); return; }
                     tactsuitVr.PlayBackHit("BulletHit", hitAngle, hitShift);
                     return;
                 }
