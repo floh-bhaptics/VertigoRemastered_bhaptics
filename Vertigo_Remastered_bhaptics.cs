@@ -17,6 +17,8 @@ using Vertigo2.Player;
 using VertigoUpgrades;
 using Valve.VR;
 
+[assembly: MelonInfo(typeof(Vertigo_Remastered_bhaptics.Vertigo_Remastered_bhaptics), "Vertigo_Remastered_bhaptics", "2.0.0", "Florian Fahrenberger")]
+[assembly: MelonGame("Zulubo Productions", "vertigo")]
 
 
 namespace Vertigo_Remastered_bhaptics
@@ -28,9 +30,8 @@ namespace Vertigo_Remastered_bhaptics
         private static int rightHand = ((int)SteamVR_Input_Sources.RightHand);
         private static bool rightFootLast = true;
 
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
-            base.OnApplicationStart();
             tactsuitVr = new TactsuitVR();
             tactsuitVr.PlaybackHaptics("HeartBeat");
         }
